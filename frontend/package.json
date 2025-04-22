@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -r https://x-access-token:$GITHUB_TOKEN@github.com/KishanJagadeesh/iris-classifier.git"
+
 
   },
   "dependencies": {
