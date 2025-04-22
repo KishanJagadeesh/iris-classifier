@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://kishanjagadeesh.github.io/iris-classifier",
+  "homepage": "https://KishanJagadeesh.github.io/iris-classifier/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
