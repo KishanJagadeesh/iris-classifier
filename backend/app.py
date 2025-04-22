@@ -7,7 +7,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)  # To allow requests from frontend
-
+# ss
 # Load the model
 model = joblib.load("model.pkl")
 
