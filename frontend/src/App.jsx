@@ -25,7 +25,7 @@ function App() {
   };
 
   return (
-    <div style={styles.page}>
+    <div style={styles.page } >
       <div style={styles.container}>
         <h1 style={styles.title}>🌸 Iris Classifier</h1>
         <form onSubmit={handleSubmit} style={styles.form}>
@@ -61,7 +61,8 @@ const styles = {
     height: '100vh',
     margin: 0,
     padding: 0,
-    background: 'linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%)',
+    // background: 'linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%)',
+    background: 'linear-gradient(135deg,rgb(69, 144, 218) 0%,rgb(145, 51, 51) 100%)',
     fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
   },
   container: {
