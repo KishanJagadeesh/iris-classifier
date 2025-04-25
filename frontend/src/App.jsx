@@ -18,7 +18,8 @@ function App() {
     e.preventDefault();
     try {
       const res = await axios.post('https://iris-classifier-0ku9.onrender.com/predict', inputs);
-      setResult(res.data.prediction);
+      const speciesMap = ['Setosa', 'Versicolor', 'Virginica'];
+      setResult(speciesMap[res.data.prediction]);
     } catch (err) {
       console.error('Prediction error:', err);
     }
