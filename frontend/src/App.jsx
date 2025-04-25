@@ -61,7 +61,7 @@ const styles = {
     height: '100vh',
     width:'100vw',
     padding: 0,
-    // background: 'linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%)',
+    // background: 'linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%)'s,
     background: 'linear-gradient(135deg,rgb(69, 144, 218) 0%,rgb(145, 51, 51) 100%)',
     fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
   },
