@@ -25,111 +25,96 @@ function App() {
   };
 
   return (
-    <div style={styles.container}>
-      <h1 style={styles.title}>Iris Classifier</h1>
-      <form onSubmit={handleSubmit} style={styles.form}>
-        {['sepal_length', 'sepal_width', 'petal_length', 'petal_width'].map((field) => (
-          <div key={field} style={styles.inputGroup}>
-            <label style={styles.label}>
-              {field.replace('_', ' ')}:
-            </label>
-            <input
-              type="number"
-              name={field}
-              value={inputs[field]}
-              onChange={handleChange}
-              step="0.1"
-              required
-              style={styles.input}
-            />
-          </div>
-        ))}
-        <button type="submit" style={styles.button}>Predict</button>
-      </form>
-      {result !== null && <h2 style={styles.result}>Predicted Class: {result}</h2>}
+    <div style={styles.page}>
+      <div style={styles.container}>
+        <h1 style={styles.title}>🌸 Iris Classifier</h1>
+        <form onSubmit={handleSubmit} style={styles.form}>
+          {['sepal_length', 'sepal_width', 'petal_length', 'petal_width'].map((field) => (
+            <div key={field} style={styles.inputGroup}>
+              <label style={styles.label}>
+                {field.replace('_', ' ')}:
+              </label>
+              <input
+                type="number"
+                name={field}
+                value={inputs[field]}
+                onChange={handleChange}
+                step="0.1"
+                required
+                style={styles.input}
+              />
+            </div>
+          ))}
+          <button type="submit" style={styles.button}>Predict</button>
+        </form>
+        {result !== null && <h2 style={styles.result}>Predicted Class: {result}</h2>}
+      </div>
     </div>
   );
 }
 
 const styles = {
-  container: {
+  page: {
+    background: 'linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%)',
+    height: '100vh',
     display: 'flex',
-    flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: '2rem',
-    fontFamily: "'Roboto', sans-serif",
-    backgroundColor: '#f4f8fb',
-    minHeight: '100vh',
+    fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+  },
+  container: {
+    backgroundColor: '#fff',
+    borderRadius: '12px',
+    padding: '3rem',
+    boxShadow: '0 8px 30px rgba(0,0,0,0.15)',
+    width: '100%',
+    maxWidth: '400px',
+    textAlign: 'center',
   },
   title: {
-    color: '#333',
-    fontSize: '2.5rem',
-    marginBottom: '1rem',
-    textAlign: 'center',
-    fontWeight: 'bold',
+    color: '#2c3e50',
+    fontSize: '2.2rem',
+    marginBottom: '1.5rem',
   },
   form: {
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
-    backgroundColor: '#fff',
-    padding: '2rem',
-    borderRadius: '10px',
-    boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.1)',
-    width: '300px',
-    transition: 'all 0.3s ease',
   },
   inputGroup: {
-    marginBottom: '1rem',
-    width: '100%',
+    marginBottom: '1.2rem',
+    textAlign: 'left',
   },
   label: {
-    marginBottom: '0.3rem',
-    fontSize: '1rem',
-    color: '#555',
+    display: 'block',
+    marginBottom: '0.4rem',
+    fontSize: '0.95rem',
+    color: '#34495e',
     textTransform: 'capitalize',
   },
   input: {
     width: '100%',
-    padding: '0.8rem',
+    padding: '0.7rem 0.9rem',
     fontSize: '1rem',
-    border: '2px solid #ccc',
-    borderRadius: '5px',
-    outline: 'none',
+    border: '1.5px solid #ccc',
+    borderRadius: '6px',
     transition: 'border-color 0.3s ease',
-  },
-  input: {
-    width: '100%',
-    padding: '0.8rem',
-    fontSize: '1rem',
-    border: '2px solid #ccc',
-    borderRadius: '5px',
-    outline: 'none',
-    transition: 'border-color 0.3s ease',
-  },
-  inputFocus: {
-    borderColor: '#4caf50',
   },
   button: {
     backgroundColor: '#4caf50',
     color: 'white',
     border: 'none',
-    padding: '0.8rem 1.5rem',
-    borderRadius: '5px',
-    fontSize: '1.2rem',
+    padding: '0.9rem',
+    borderRadius: '6px',
+    fontSize: '1.1rem',
     cursor: 'pointer',
+    marginTop: '1rem',
     transition: 'background-color 0.3s ease',
   },
-  buttonHover: {
-    backgroundColor: '#45a049',
-  },
   result: {
-    marginTop: '1rem',
-    color: '#333',
-    fontSize: '1.5rem',
-    fontWeight: 'bold',
-    textAlign: 'center',
+    marginTop: '2rem',
+    color: '#2c3e50',
+    fontSize: '1.3rem',
+    fontWeight: '600',
   },
 };
 
