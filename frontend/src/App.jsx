@@ -55,17 +55,19 @@ function App() {
 
 const styles = {
   page: {
-    background: 'linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%)',
-    height: '100vh',
     display: 'flex',
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh',
+    margin: 0,
+    padding: 0,
+    background: 'linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%)',
     fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
   },
   container: {
     backgroundColor: '#fff',
     borderRadius: '12px',
-    padding: '3rem',
+    padding: '2.5rem',
     boxShadow: '0 8px 30px rgba(0,0,0,0.15)',
     width: '100%',
     maxWidth: '400px',
