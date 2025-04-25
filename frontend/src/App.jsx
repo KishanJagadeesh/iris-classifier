@@ -56,11 +56,11 @@ function App() {
 const styles = {
   page: {
     display: 'flex',
+    flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     height: '100vh',
-    width:'200vh',
-    
+    width:'100vw',
     padding: 0,
     // background: 'linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%)',
     background: 'linear-gradient(135deg,rgb(69, 144, 218) 0%,rgb(145, 51, 51) 100%)',
