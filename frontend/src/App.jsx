@@ -59,8 +59,8 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     height: '100vh',
-    width:'100vh',
-    margin: 0,
+    width:'200vh',
+    
     padding: 0,
     // background: 'linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%)',
     background: 'linear-gradient(135deg,rgb(69, 144, 218) 0%,rgb(145, 51, 51) 100%)',
