@@ -28,7 +28,7 @@ function App() {
   return (
     <div style={styles.page } >
       <div style={styles.container}>
-        <h1 style={styles.title}>🌸 Iris Classifier</h1>
+        <h1 style={styles.title}>🌸 Iris Classifier -Flower seggregation</h1>
         <form onSubmit={handleSubmit} style={styles.form}>
           {['sepal_length', 'sepal_width', 'petal_length', 'petal_width'].map((field) => (
             <div key={field} style={styles.inputGroup}>
