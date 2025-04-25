@@ -56,7 +56,6 @@ function App() {
 const styles = {
   page: {
     display: 'flex',
-    flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     height: '100vh',
